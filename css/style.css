@@ -2,15 +2,49 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-family);
   text-decoration: none;
   list-style: none;
   scroll-behavior: smooth;
   
   
 }
+
+:root {
+  /* Cores */
+  --color-bg:#000000;
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.787);
+  --color-border: #ffffff;
+
+
+  /* espaçamentos (do menor pro maior) */
+
+  --space-3: .625rem; /* pequeno */
+  --space-4: 1rem;
+  --space-8: 1.875rem;
+  --space-15: 3.75rem;
+
+  /* raio */
+
+  --radius-pill: 50px;
+  --radius-card: 20px;
+
+  /* font */
+  --font-2: .5rem;
+  --font-2-5: .625rem;
+  --font-3: .75rem;
+  --font-4: 1rem;
+  --font-5: 1.25rem;
+  --font-6: 1.5rem;
+  --font-8: 2.25rem;
+  --font-hero: 8.4375rem;
+
+  --font-family: "Poppins", sans-serif;
+  
+}
 body {
-  background-color: black;
+  background-color: var(--color-bg);
   overflow-x: hidden;
 }
 .container {
@@ -27,9 +61,9 @@ body {
     padding: .1563rem .9375rem;
     width: 18.3125rem;
     height: 2.3125rem;
-    border: 1px white solid;
-    border-radius: 50px;
-    gap: 1.875rem;
+    border: 1px var(--color-text) solid;
+    border-radius: var(--radius-pill);
+    gap: var(--space-8);
     background-color: transparent;
     box-shadow:
       rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
@@ -47,16 +81,16 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 1.875rem;
+      gap: var(--space-8);
 
       & li {
         & a {
-          color: rgba(255, 255, 255, 0.787);
-          font-size: .625rem;
+          color: var(--color-text-muted);
+          font-size: var(--font-2-5);
 
           &:hover {
             text-decoration: underline;
-            color: white;
+            color: var(--color-text);
           }
         }
       }
@@ -85,15 +119,15 @@ body {
     .content {
       margin-bottom: 5rem;
       & h1 {
-        font-size: 8.43rem;
-        color: white;
+        font-size: var(--font-hero);
+        color: var(--color-text);
         font-weight: 800;
       }
 
       & p {
-        font-size: 1.5rem;
+        font-size: var(--font-6);
         font-weight: 500;
-        color: white;
+        color: var(--color-text);
       }
     }
 
@@ -141,25 +175,25 @@ body {
       max-width: 100%;
       min-height: 17.8125rem;
       height: auto;
-      color: white;
-      border: 2px solid white;
+      color: var(--color-text);
+      border: 2px solid var(--color-border);
       backdrop-filter: blur(4px);
-      border-radius: 20px;
-      padding: .625rem 1.875rem;
+      border-radius: var(--radius-card);
+      padding: var(--space-3) var(--space-8);
       gap: .9375rem;
 
       & h2 {
-        font-size: 2.25rem;
+        font-size: var(--font-8);
         font-weight: 600;
       }
 
       & h3 {
-        font-size: 1.5rem;
+        font-size: var(--font-6);
         font-weight: 600;
       }
 
       & p {
-        font-size: 1rem;
+        font-size: var(--font-4);
         font-weight: 600;
       }
     }
@@ -172,7 +206,7 @@ body {
         display: flex;
         align-items: center;
         width: max-content;
-        gap: 1rem; /* Espaçamento uniforme entre todos os cards */
+        gap: var(--space-4); /* Espaçamento uniforme entre todos os cards */
         animation: scroll 25s linear infinite;
         &:hover{
             animation-play-state: paused;
@@ -182,7 +216,7 @@ body {
         display: flex;
         align-items: center;
         width: max-content;
-        gap: 1rem; /* Espaçamento uniforme entre todos os cards */
+        gap: var(--space-4); /* Espaçamento uniforme entre todos os cards */
         animation: scroll 25s linear infinite reverse;
         &:hover{
             animation-play-state: paused;
@@ -195,7 +229,7 @@ body {
         
 
         & img {
-          border-radius: 20px;
+          border-radius: var(--radius-card);
           width: 100%;
           height: 100%;
           object-fit: cover;
@@ -244,12 +278,18 @@ body {
   }
   
   .container .hero .content p {
-    font-size: 1rem;
+    font-size: var(--font-4);
   }
   
   /* Dá um respiro no topo para não colar no header */
   .container .secao2 {
     padding-top: 6.25rem;
     padding-bottom: 3.125rem;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero .content h1 {
+    color: yellow !important;
   }
 }
