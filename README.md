@@ -51,6 +51,10 @@ uma experiência de desenvolvimento mais próxima de um ambiente web real.
 - Google Fonts
 - Boxicons
 
+## Autor
+
+Desenvolvido por mim como meu primeiro projeto autoral.
+
 ## Licença
 
 Este projeto está distribuído sob a licença disponível no arquivo
