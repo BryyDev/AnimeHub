@@ -1,18 +1,24 @@
 # AnimeHub
 
-Uma landing page inspirada em **Solo Leveling**, criada para apresentar o
-personagem Sung Jinwoo, o Monarca das Sombras. Este é meu primeiro projeto
-autoral e também meu primeiro projeto versionado.
+O AnimeHub é um projeto de um hub de landing pages de anime. A página do Sung
+Jinwoo, de **Solo Leveling**, foi a primeira landing page desenvolvida para o
+projeto. O hub principal, que reunirá outras páginas e experiências de animes,
+ainda está em construção.
+
+Este é meu primeiro projeto autoral e também meu primeiro projeto versionado.
 
 ## Sobre o projeto
 
-O AnimeHub é uma página estática com:
+Atualmente, a primeira landing page do projeto conta com:
 
 - hero section com vídeo de fundo e apresentação do Jinwoo;
 - galeria visual com carrosséis animados;
 - página de login demonstrativa;
 - layout responsivo desenvolvido com HTML e CSS;
 - tipografia Poppins e ícones do Boxicons carregados por CDN.
+
+O objetivo é expandir o AnimeHub com novas landing pages de diferentes animes e
+transformá-lo em um hub central de experiências temáticas.
 
 ## Como executar
 
